@@ -1,0 +1,183 @@
+body{
+    margin: 0px;
+}
+/*Barra de navegador*/
+
+.contenedornav{
+    position: sticky;
+    z-index: 3;
+    top: 0;
+}
+
+.barranav{
+    display: flex;
+    justify-content: space-between;
+    height: 12vh;
+    background-color:yellow;
+}
+
+.titulobarra{
+    justify-self: start;
+    margin-left: 20px;
+    color: blue;
+    margin-top: 4vh;
+    cursor: pointer;
+}
+
+.carritobarra{
+    font-size: 25px;
+    margin-right: 20px;
+    margin-top: 3.5vh;
+    cursor: pointer;
+}
+
+.carritocanti{
+  background-color: blue;
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 4px;
+  top: 37px;
+  right: 14px;
+  position: absolute;
+  display: none;
+}
+
+/*Banner*/
+
+.banner{
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+    url("https://scontent.fmex36-1.fna.fbcdn.net/v/t31.18172-8/18422927_10155600327653268_6110656966209954077_o.jpg?_nc_cat=105&ccb=1-7&_nc_sid=19026a&_nc_eui2=AeGW3A-b39LRPPpQC7M1WTk2S3VLHlCRCSJLdUseUJEJIkwAU3nls8bTNAHkfTQW-sTc4_Cp4JzbLwMcR8NVXKHA&_nc_ohc=lHidmpKARuoAX8c6UaP&_nc_ht=scontent.fmex36-1.fna&oh=00_AfAvl07WjXME0ez7dDqsQetfXGUScOJLTjMVtXznVdTYBw&oe=641E1712");
+
+}
+
+.contenedorbanner{
+text-align: center;
+padding: 15% 0;
+}
+.banner h1{
+    margin: 0;
+    color: yellow;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    font-size: 62px;
+    font-weight: bold;
+}
+
+.banner p{
+    font-size: 30px;
+    color: white;
+    opacity: 0.7;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+/*Productos*/
+
+.tiendacontenido{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.articles {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    margin: 10px;
+  }
+  
+  .articles > img {
+    width: 90%;
+    height: 250px;
+  }
+  
+  .precio {
+    color: black;
+    font-size: 22px;
+  }
+  
+  .articles button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: blue;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .articles button:hover {
+    opacity: 0.7;
+  }
+
+ /*Carrito*/
+
+ .modalconte {
+    width: 80%;
+    margin: 0 10%;
+    max-height: 88vh;
+    color: blue;
+    background-color: rgb(229, 229, 169);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 12vh;
+    scrollbar-color: none;
+  }
+  
+  .modalconte::-webkit-scrollbar {
+    display: none;
+  }
+  .modalhead {
+    display: flex;
+    justify-content: space-around;
+    background-color: blue;
+    color: #fff;
+    width: 100%;
+  }
+  
+  .modalht {
+    justify-self: start;
+  }
+  
+  .modalhbt {
+    cursor: pointer;
+  }
+  
+  .modalconte > .modcont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 10px;
+  }
+  
+  .modalconte> div > img {
+    height: 120px;
+    width: 120px;
+  }
+  
+  .totcont {
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+
+  .dtp{
+    cursor: pointer;
+  }
